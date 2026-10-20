@@ -2,7 +2,7 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="theme-color" content="#bbdff5">
   <meta name="description" content="Chạm một bông hoa, đánh thức cả khu vườn và nhận một lời chúc dịu dàng ngày 20/10.">
   <title>Cả một vườn thương · 20/10</title>
@@ -137,12 +137,25 @@
     .noscript { position: absolute; top: 30%; left: 20px; right: 20px; text-align: center; line-height: 1.8; }
     @keyframes unfold { from { opacity: 0; transform: translateY(35px) rotate(-2deg) scale(.94); } to { opacity: 1; transform: none; } }
     @media (max-width: 600px) {
+      .garden { min-height: 480px; height: 100svh; }
+      .page-header { left: 16px; right: 16px; gap: 12px; top: max(18px, env(safe-area-inset-top)); }
+      .garden-actions { bottom: max(16px, env(safe-area-inset-bottom)); gap: 8px; }
+      .garden-actions button, .view-garden, .close-card { min-height: 44px; }
+      .close-card { min-width: 44px; top: 8px; right: 8px; }
+      dialog { width: calc(100% - 24px); max-height: calc(100svh - 24px - env(safe-area-inset-top) - env(safe-area-inset-bottom)); }
       .dedication { font-size: 18px; max-width: 150px; }
       .date { max-width: 130px; font-size: 10px; }
       .date span { font-size: 25px; }
       .letter { padding: 35px 26px 25px; }
       .intro { top: 18%; }
       h1 { font-size: clamp(23px, 5.8vw, 28px); }
+    }
+    @media (max-height: 500px) {
+      .garden { min-height: 320px; }
+      .page-header { top: max(10px, env(safe-area-inset-top)); }
+      .intro { top: 24%; }
+      .intro p { margin-top: 4px; }
+      .flower-button { top: 56%; width: 140px; height: 140px; }
     }
     @media (max-height: 600px) and (min-width: 600px) {
       .garden { min-height: 360px; }

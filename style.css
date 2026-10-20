@@ -217,6 +217,10 @@ h1 { margin: 0; font-size: clamp(28px, 3.4vw, 42px); line-height: 1.08; letter-s
   body.card-open .bouquet-composition { width: min(100%, var(--bouquet-size)); }
 }
 @media (max-width: 600px) {
+  html, body { min-width: 280px; }
+  .greeting, .letter-paper { overflow-wrap: anywhere; }
+  .text-button, .close-button { min-height: 44px; }
+  .close-button { min-width: 44px; }
   .occasion { font-size: 12px; margin-bottom: 8px; }
   .greeting { margin-bottom: 6px; }
   .greeting-caption { font-size: 12px; margin-top: 8px; }
