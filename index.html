@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="theme-color" content="#fff8fa">
   <meta name="description" content="Một bó hoa và tấm thiệp nhỏ, gửi những lời chúc dịu dàng nhân ngày Phụ nữ Việt Nam 20/10.">
-  <title>Một bó hoa dành tặng bạn · 20/10</title>
+  <title>Một bó hoa tặng em gái · 20/10</title>
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./music.css">
   <script src="./music.js" defer></script>
@@ -19,8 +19,8 @@
     <canvas id="ambientPetalsCanvas" aria-hidden="true"></canvas>
     <header class="greeting">
       <p class="occasion">Ngày Phụ nữ Việt Nam <span>20/10</span></p>
-      <h1>Một bó hoa nhỏ,<br>gửi ngàn yêu thương.</h1>
-      <p class="greeting-caption">Mong hôm nay của bạn thật dịu dàng.</p>
+      <h1>Một bó hoa nhỏ,<br>tặng em gái của anh.</h1>
+      <p class="greeting-caption">Mong hôm nay của em thật dịu dàng.</p>
     </header>
 
     <div class="gift-layout">
@@ -35,8 +35,8 @@
               <canvas id="bouquetCanvas" aria-hidden="true"></canvas>
             </div>
             <button class="envelope-button" id="openCard" type="button" aria-haspopup="dialog" aria-controls="greetingCard" aria-expanded="false" hidden>
-              <span class="envelope" aria-hidden="true"><span class="envelope-letter">Gửi bạn</span><span class="envelope-seal">♡</span></span>
-              <span class="envelope-caption">Có một tấm thiệp cho bạn</span>
+              <span class="envelope" aria-hidden="true"><span class="envelope-letter">Gửi em</span><span class="envelope-seal">♡</span></span>
+              <span class="envelope-caption">Có một tấm thiệp cho em</span>
               <span class="envelope-action">Mở thiệp</span>
             </button>
           </div>
@@ -55,8 +55,8 @@
           <button class="close-button" id="closeCard" type="button" aria-label="Đóng thiệp">×</button>
           <div id="cardReading">
             <div class="letter-date" aria-label="Ngày 20 tháng 10"><span>20</span><span class="date-stem" aria-hidden="true"></span><span>10</span></div>
-            <p class="letter-recipient">Gửi <span id="cardRecipient">bạn</span>,</p>
-            <h2 id="cardTitle">Chúc bạn một ngày<br>thật nhiều yêu thương.</h2>
+            <p class="letter-recipient">Gửi <span id="cardRecipient">em gái của anh</span>,</p>
+            <h2 id="cardTitle">Chúc em một ngày<br>thật nhiều yêu thương.</h2>
             <div class="letter-flower" aria-hidden="true">❀</div>
             <p id="cardMessage" class="letter-message"></p>
             <div class="letter-signoff"><p>Với thật nhiều thương mến,</p><p id="cardSender" class="letter-signature"></p></div>
@@ -64,7 +64,7 @@
             <div class="letter-actions"><button id="viewAlbum" class="text-button" type="button" aria-controls="memoryAlbum">Xem album kỷ niệm <span aria-hidden="true">♡</span></button><button id="editCard" hidden class="text-button" type="button">Viết lời chúc riêng <span aria-hidden="true">✎</span></button></div>
           </div>
           <form id="cardEditor" hidden>
-            <p class="editor-intro">Một tấm thiệp mang lời của bạn.</p>
+            <p class="editor-intro">Một tấm thiệp mang lời của em.</p>
             <h2 id="editorTitle" class="editor-title">Viết chút yêu thương</h2>
             <label for="recipientInput">Gửi đến</label>
             <input id="recipientInput" name="recipient" maxlength="60" required autocomplete="off">
@@ -81,12 +81,12 @@
     </div>
     <section id="memoryAlbum" class="memory-album" aria-labelledby="albumTitle" hidden>
       <header class="album-heading">
-        <p class="album-note">Một chút kỷ niệm, dành riêng cho bạn</p>
+        <p class="album-note">Một chút kỷ niệm, dành riêng cho em</p>
         <h2 id="albumTitle">Những khoảnh khắc thương yêu</h2>
         <button id="toggleAlbum" class="text-button" type="button" aria-expanded="false" aria-controls="albumPhotos">Xòe album <span aria-hidden="true">♡</span></button>
         <button id="editAlbum" class="text-button" type="button" aria-expanded="false" aria-controls="albumPhotos">Thay ảnh <span aria-hidden="true">✎</span></button>
       </header>
-      <p id="albumEditHint" class="album-edit-hint" hidden>Chọn ảnh từ thiết bị của bạn, tối đa 20 MB mỗi ảnh. Ảnh được lưu trên trình duyệt này, không tự gửi sang thiết bị khác.</p>
+      <p id="albumEditHint" class="album-edit-hint" hidden>Chọn ảnh từ thiết bị của em, tối đa 20 MB mỗi ảnh. Ảnh được lưu trên trình duyệt này, không tự gửi sang thiết bị khác.</p>
       <p id="albumStatus" class="album-status" role="status" aria-live="polite" aria-atomic="true"></p>
       <div id="albumPhotos" class="album-photos">
         <figure class="portrait-card album-card">
@@ -109,7 +109,7 @@
         </figure>
         <figure class="portrait-card album-card">
           <div class="portrait-photo"><img src="./assets/portrait-placeholder.webp" alt="Ảnh kỷ niệm thứ ba của người nhận thiệp" width="768" height="1024" decoding="async" loading="lazy"></div>
-          <figcaption><span class="portrait-dedication">Mong bạn luôn rạng rỡ.</span><span class="portrait-date">Hôm nay và cả mai sau</span></figcaption>
+          <figcaption><span class="portrait-dedication">Mong em luôn rạng rỡ.</span><span class="portrait-date">Hôm nay và cả mai sau</span></figcaption>
           <div class="photo-actions" hidden>
             <button class="text-button change-photo" type="button" aria-label="Đổi ảnh thứ ba">Đổi ảnh</button>
             <button class="text-button reset-photo" type="button" aria-label="Khôi phục ảnh thứ ba" disabled>Ảnh ban đầu</button>

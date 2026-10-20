@@ -1,7 +1,7 @@
 (() => {
   'use strict';
 
-  const STORAGE_KEY = 'flower.garden.greeting.20-10.v1';
+  const STORAGE_KEY = 'flower.garden.greeting.20-10.sister.v1';
   const card = document.getElementById('wishCard');
   const reading = document.getElementById('cardReading');
   const editor = document.getElementById('cardEditor');

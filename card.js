@@ -1,11 +1,11 @@
 (() => {
   'use strict';
 
-  const STORAGE_KEY = 'flower.greeting.20-10.v1';
+  const STORAGE_KEY = 'flower.greeting.20-10.sister.v1';
   const defaultGreeting = {
-    recipient: 'bạn',
-    message: 'Nhân ngày Phụ nữ Việt Nam 20/10, chúc bạn luôn khỏe mạnh, bình an và có thật nhiều niềm vui.\n\nMong bạn được yêu thương từ những điều nhỏ nhất, có thời gian cho bản thân và tự tin theo đuổi những điều mình mong muốn.\n\nHôm nay và cả những ngày sau, hãy luôn mỉm cười theo cách của riêng bạn nhé.',
-    sender: 'Một người quý mến bạn'
+    recipient: 'em gái của anh',
+    message: 'Chúc em gái của anh một ngày 20/10 thật vui! Mong em luôn khỏe mạnh, học tập và làm những điều mình thích thật tốt, ngày nào cũng có chuyện để cười.\n\nCứ tự tin theo đuổi điều em muốn, nhưng cũng nhớ ăn uống đầy đủ và nghỉ ngơi nhé. Những lúc thấy mệt hay có chuyện buồn, cứ kể anh nghe.\n\nTặng em bó hoa nhỏ này. Chúc em hôm nay nhận được thật nhiều lời chúc, quà xinh và cả món ngon em thích nữa!',
+    sender: 'Anh trai của em'
   };
   const dialog = document.getElementById('greetingCard');
   const openButton = document.getElementById('openCard');
